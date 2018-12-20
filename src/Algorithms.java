@@ -2,11 +2,11 @@ import java.util.*;
 
 public class Algorithms {
     public static void main(String args[]){
-//        System.out.println(numJewelsInStones("aA","aAsAafna")); //output 5
-//        System.out.println(rangeSumBST([10,5,15,3,7,13,18,1,null,6],7,15)); //output 32
+
     }
     /**
      * 1.
+     *
      * You're given strings J representing the types of stones that are jewels, and S
      * representing the stones you have.  Each character in S is a type of stone you have.
      *
@@ -25,21 +25,17 @@ public class Algorithms {
      * Output: 0
      */
     public static int numJewelsInStones(String J, String S) {
-        int result = 0;
-        HashMap jHash = new HashMap();
-        for (int j = 0; j < J.length(); j++) {
-            jHash.put(J.charAt(j), J.charAt(j));
+        int s = 0;
+        for(int i = 0; i < S.length(); i++){
+            if(J.indexOf(S.charAt(i)) != -1)
+                s++;
         }
-        for (int s = 0; s < S.length(); s++) {
-            if (jHash.containsKey(S.charAt(s))) {
-                result++;
-            }
-        }
-        return result;
+        return s;
     }
 
     /**
      * 2.
+     *
      * Given the root node of a binary search tree, return the sum of
      * values of all nodes with value between L and R (inclusive).
      *
@@ -53,6 +49,9 @@ public class Algorithms {
      *
      * Input: root = [10,5,15,3,7,13,18,1,null,6], L = 6, R = 10
      * Output: 23
+     *
+     * Complexity: O(N), where N is the number of nodes in the tree.
+     *
      */
 
     public class TreeNode{
@@ -104,6 +103,8 @@ public class Algorithms {
      *             [9, 4, 8, 7],
      *             [3, 3, 3, 3] ]
      *
+     * Complexity: O(N^2)
+     *
      * @param grid
      * @return
      */
@@ -121,6 +122,74 @@ public class Algorithms {
             for (int j = 0; j < n; j++)
                 res += Math.min(row[i], col[j]) - grid[i][j];
         return res;
+    }
+
+    /**
+     * 4.
+     *
+     * Every email consists of a local name and a domain name, separated by the @ sign.
+     *
+     * For example, in alice@leetcode.com, alice is the local name, and leetcode.com is the domain name.
+     *
+     * Besides lowercase letters, these emails may contain '.'s or '+'s.
+     *
+     * If you add periods ('.') between some characters in the local name part of an email address,
+     * mail sent there will be forwarded to the same address without dots in the local name.
+     * For example, "alice.z@leetcode.com" and "alicez@leetcode.com" forward to the same email address.
+     * Note that this rule does not apply for domain names.)
+     *
+     * If you add a plus ('+') in the local name, everything after the first plus sign will be ignored.
+     * This allows certain emails to be filtered, for example m.y+name@email.com will be forwarded to my@email.com.
+     * (Again, this rule does not apply for domain names.)
+     *
+     * It is possible to use both of these rules at the same time.
+     *
+     * Given a list of emails, we send one email to each address in the list.
+     * How many different addresses actually receive mails?
+     *
+     *
+     *
+     * Example 1:
+     *
+     * Input: ["test.email+alex@leetcode.com","test.e.mail+bob.cathy@leetcode.com","testemail+david@lee.tcode.com"]
+     * Output: 2
+     * Explanation: "testemail@leetcode.com" and "testemail@lee.tcode.com" actually receive mails
+     *
+     *
+     *
+     * @param emails
+     * @return
+     */
+
+    public static int numUniqueEmails(String[] emails) {
+        if (emails == null || emails.length == 0) {
+            return 0;
+        }
+
+        Set<String> set = new HashSet<>();
+        for (String email : emails) {
+            StringBuilder sb = new StringBuilder();
+            boolean isBeforePlus = true;
+            int idxOfAt = 0;
+            for (int i = 0; i < email.length(); i++) {
+                if (isBeforePlus && email.charAt(i) != '@') {
+                    if (email.charAt(i) == '.') {
+                        continue;
+                    } else if (email.charAt(i) == '+') {
+                        isBeforePlus = false;
+                    } else {
+                        sb.append(email.charAt(i));
+                    }
+                } else if (email.charAt(i) == '@') {
+                    idxOfAt = i;
+                    break;
+                }
+            }
+            sb.append(email.substring(idxOfAt));
+            set.add(sb.toString());
+        }
+
+        return set.size();
     }
 
 
