@@ -5,3 +5,4 @@ Collection of Algorithm Questions
 3. Max Increase To Keep Skyline
 4. Unique Email
 5. To Lower Case
+6. Encode Decode URL
