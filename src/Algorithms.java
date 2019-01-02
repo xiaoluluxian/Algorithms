@@ -5,7 +5,7 @@ public class Algorithms {
 
     }
     /**
-     * 1.
+     * 1.----------------------------------------------------------------------------------
      *
      * You're given strings J representing the types of stones that are jewels, and S
      * representing the stones you have.  Each character in S is a type of stone you have.
@@ -34,7 +34,7 @@ public class Algorithms {
     }
 
     /**
-     * 2.
+     * 2.----------------------------------------------------------------------------------
      *
      * Given the root node of a binary search tree, return the sum of
      * values of all nodes with value between L and R (inclusive).
@@ -69,7 +69,7 @@ public class Algorithms {
     }
 
     /**
-     *3.
+     *3.----------------------------------------------------------------------------------
      *
      * In a 2 dimensional array grid, each value grid[i][j] represents the height of a
      * building located there. We are allowed to increase the height of any number of buildings,
@@ -125,7 +125,7 @@ public class Algorithms {
     }
 
     /**
-     * 4.
+     * 4.----------------------------------------------------------------------------------
      *
      * Every email consists of a local name and a domain name, separated by the @ sign.
      *
@@ -193,7 +193,7 @@ public class Algorithms {
     }
 
     /**
-     * 5.
+     * 5.----------------------------------------------------------------------------------
      *
      * Implement function ToLowerCase() that has a string parameter str, and returns the same string in lowercase.
      *
@@ -214,7 +214,7 @@ public class Algorithms {
      * @return
      */
 
-    public String toLowerCase(String str){
+    public static String toLowerCase(String str){
         int l = str.length();
         char[] c = str.toCharArray();
         for(int i = 0;i < l;i++) {
@@ -226,7 +226,7 @@ public class Algorithms {
     }
 
     /**
-     * 6.
+     * 6.-------------------------------------------------------------------------------------
      *
      * TinyURL is a URL shortening service where you enter a URL such as https://leetcode.com/problems/design-tinyurl
      * and it returns a short URL such as http://tinyurl.com/4e9iAk.
@@ -239,12 +239,40 @@ public class Algorithms {
      */
 
     Map<Integer, String> map = new HashMap<>();
-    public String encode(String longUrl) {
+    private String encode(String longUrl) {
         map.put(longUrl.hashCode(),longUrl);
         return "http://tinyurl.com/"+longUrl.hashCode();
     }
-    public String decode(String shortUrl) {
+    private String decode(String shortUrl) {
         return map.get(Integer.parseInt(shortUrl.replace("http://tinyurl.com/", "")));
+    }
+
+    /**
+     * 7.--------------------------------------------------------------------------------------
+     *
+     * In a array A of size 2N, there are N+1 unique elements, and exactly one of these elements is repeated N times.
+     *
+     * Return the element repeated N times.
+     *
+     * Example 1:
+     *
+     * Input: [1,2,3,3]
+     * Output: 3
+     * Example 2:
+     *
+     * Input: [2,1,2,5,3,2]
+     * Output: 2
+     *
+     * @param A
+     * @return
+     */
+    private int repeatedNTimes(int[] A) {
+        for (int k = 1; k <= 3; ++k)
+            for (int i = 0; i < A.length - k; ++i)
+                if (A[i] == A[i+k])
+                    return A[i];
+
+        throw null;
     }
 
 
