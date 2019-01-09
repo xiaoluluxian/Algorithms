@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="74669d9c-52ed-4911-82a3-3a6423eb414d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Algorithms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Questions.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,25 +15,32 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Algorithms.java">
+        <entry file="file://$PROJECT_DIR$/src/Questions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="335" column="5" lean-forward="true" selection-start-line="335" selection-start-column="5" selection-end-line="335" selection-end-column="5" />
+            <state relative-caret-position="601">
+              <caret line="334" selection-start-line="334" selection-end-line="334" />
               <folding>
                 <element signature="e#9413#9414#0" expanded="true" />
                 <element signature="e#9481#9482#0" expanded="true" />
-                <element signature="e#10894#10895#0" expanded="true" />
-                <element signature="e#10984#10985#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Algorithms.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DataStructure.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="53" column="31" lean-forward="true" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+            <state relative-caret-position="90">
+              <caret line="24" column="111" selection-start-line="24" selection-start-column="111" selection-end-line="24" selection-end-column="111" />
               <folding>
                 <element signature="e#434#435#0" expanded="true" />
                 <element signature="e#469#470#0" expanded="true" />
@@ -75,16 +81,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/Algorithms.java" />
         <option value="$PROJECT_DIR$/src/DataStructure.java" />
+        <option value="$PROJECT_DIR$/src/Algorithms.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
-    <option name="y" value="-12" />
-    <option name="width" value="2280" />
-    <option name="height" value="1527" />
+    <option name="x" value="424" />
+    <option name="y" value="-14" />
+    <option name="width" value="2910" />
+    <option name="height" value="1650" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -115,7 +121,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547063784020" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547064730060" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -132,7 +138,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DataStructure">
+  <component name="RunManager" selected="Application.Algorithms">
     <configuration name="Algorithms" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Algorithms" />
       <module name="Algorithms" />
@@ -154,11 +160,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Questions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Questions" />
+      <module name="Algorithms" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Algorithms" />
         <item itemvalue="Application.DataStructure" />
         <item itemvalue="Application.DataStructure$BinarySearchTree" />
-        <item itemvalue="Application.Algorithms" />
+        <item itemvalue="Application.Questions" />
       </list>
     </recent_temporary>
   </component>
@@ -178,12 +192,21 @@
       <workItem from="1545257604741" duration="544000" />
       <workItem from="1545319761120" duration="5207000" />
       <workItem from="1546451416680" duration="1400000" />
-      <workItem from="1547062915732" duration="868000" />
+      <workItem from="1547062915732" duration="1813000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11356000" />
+    <option name="totallyTimeSpent" value="12301000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1519" height="977" extended-state="6" />
@@ -202,7 +225,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289941" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32954547" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
@@ -230,6 +253,21 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataStructure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="24" column="111" selection-start-line="24" selection-start-column="111" selection-end-line="24" selection-end-column="111" />
+          <folding>
+            <element signature="e#434#435#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#601#602#0" expanded="true" />
+            <element signature="e#1279#1280#0" expanded="true" />
+            <element signature="e#1319#1320#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -240,31 +278,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithms.java">
+    <entry file="file://$PROJECT_DIR$/src/Questions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="335" column="5" lean-forward="true" selection-start-line="335" selection-start-column="5" selection-end-line="335" selection-end-column="5" />
+        <state relative-caret-position="601">
+          <caret line="334" selection-start-line="334" selection-end-line="334" />
           <folding>
             <element signature="e#9413#9414#0" expanded="true" />
             <element signature="e#9481#9482#0" expanded="true" />
-            <element signature="e#10894#10895#0" expanded="true" />
-            <element signature="e#10984#10985#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataStructure.java">
+    <entry file="file://$PROJECT_DIR$/src/Algorithms.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="53" column="31" lean-forward="true" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
-          <folding>
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
-            <element signature="e#1279#1280#0" expanded="true" />
-            <element signature="e#1319#1320#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
         </state>
       </provider>
     </entry>
