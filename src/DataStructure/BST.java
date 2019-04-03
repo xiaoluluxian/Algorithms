@@ -1,4 +1,6 @@
-public class DataStructure {
+package DataStructure;
+
+public class BST {
     // Driver Program to test above functions
     public static void main(String[] args) {
         BinarySearchTree tree = new BinarySearchTree();
